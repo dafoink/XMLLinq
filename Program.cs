@@ -15,7 +15,7 @@ namespace XMLLinq
             XDocument xDoc = XDocument.Load(tr);
 
             Console.WriteLine("\n\n");
-            // retrieve all records with the attribute id == "1" (should be 2)
+            // retrieve all records with the attribute id == "1" (should be 2 records returned)
             ShowForID(xDoc, "1");
 
             // group ALL records by the id value.  Should be 2 groups.  first group (id == "1") has 2 records.  the second (id == "2") has 1 record.
